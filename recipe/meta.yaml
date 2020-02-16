@@ -10,7 +10,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install --no-deps -vv .
   entry_points:
     - ptvpy = ptvpy.__main__:main
@@ -24,7 +24,7 @@ requirements:
     - click
     - h5py
     - imageio
-    - matplotlib
+    - matplotlib-base
     - numba
     - numpy
     - openpyxl
