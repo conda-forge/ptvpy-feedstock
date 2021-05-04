@@ -1,4 +1,4 @@
-{% set version = "0.8.0" %}
+{% set version = "0.9.1" %}
 
 package:
   name: ptvpy
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/ptvpy/ptvpy-{{ version }}.tar.gz
-  sha256: 54eae95f99df94bb05313dcdbabe6d50414c552faaa1e0608e408f2fe370718e
+  sha256: 38e2708dbad2a900361be99e83569683088edb5c7349ee76104366bf5a4264e5
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install --no-deps -vv .
   entry_points:
     - ptvpy = ptvpy.__main__:main
@@ -55,7 +55,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: Command line tool and Python library for particle tracking velocimetry 
+  summary: Command line tool and Python library for particle tracking velocimetry
   description: |
     A free and open-source command line tool and Python library for particle
     tracking velocimetry enabling a flexible workflow with reproducible and
