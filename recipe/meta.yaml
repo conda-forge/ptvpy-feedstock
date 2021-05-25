@@ -1,4 +1,4 @@
-{% set version = "0.9.1" %}
+{% set version = "0.10.0" %}
 
 package:
   name: ptvpy
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/ptvpy/ptvpy-{{ version }}.tar.gz
-  sha256: 38e2708dbad2a900361be99e83569683088edb5c7349ee76104366bf5a4264e5
+  sha256: cd522d4fd937f1997aa10a73d3c0add6e2d25f3a45db4b8e2e77faa1ec8b6299
 
 build:
   noarch: python
