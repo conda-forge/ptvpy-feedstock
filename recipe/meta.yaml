@@ -1,4 +1,4 @@
-{% set version = "0.10.0" %}
+{% set version = "0.10.2" %}
 
 package:
   name: ptvpy
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/ptvpy/ptvpy-{{ version }}.tar.gz
-  sha256: cd522d4fd937f1997aa10a73d3c0add6e2d25f3a45db4b8e2e77faa1ec8b6299
+  sha256: 94f06294dc99a22d363fa30bcca380b2d6302c307104e76130817bf8c2e18e5f
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - setuptools-scm
   run:
     - cerberus
-    - click >=7.1
+    - click >=8.0.0
     - h5py
     - imageio
     - matplotlib-base
